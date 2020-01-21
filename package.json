@@ -1,14 +1,25 @@
 {
-  "name": "sell_page",
+  "name": "reactexpress",
   "version": "1.0.0",
-  "description": "Pagina de ventas de productos",
-  "main": "index.js",
+  "description": "Starter kit for creating React and Express apps",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Mario Guzman",
-  "license": "ISC",
+  "author": "Brad Traversy",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.14.6"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "bootstrap": "^4.4.1",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "mysql": "^2.17.1",
+    "react-bootstrap": "^1.0.0-beta.16"
   }
 }
